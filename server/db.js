@@ -1,5 +1,5 @@
 const pg = require('pg')
-const client = new pg.Client('process.env.DATABASE_URL || postgres://localhost/thing_tracker')
+const client = new pg.Client(process.env.DATABASE_URL || 'postgres://localhost/thing_tracker')
 
 const seed = async() => {
 
